@@ -210,7 +210,7 @@ __webpack.config.js__
       print: './src/print.js'
     },
     plugins: [
-+     new CleanWebpackPlugin(['dist']),
++     new CleanWebpackPlugin(),
       new HtmlWebpackPlugin({
         title: 'Output Management'
       })
@@ -221,7 +221,6 @@ __webpack.config.js__
     }
   };
 ```
-
 现在执行 `npm run build`，再检查 `/dist` 文件夹。如果一切顺利，你现在应该不会再看到旧的文件，只有构建后生成的文件！
 
 
